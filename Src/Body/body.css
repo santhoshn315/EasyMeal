@@ -1,0 +1,141 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  justify-content: center;
+}
+
+.res-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  flex-wrap: wrap;
+}
+
+link.line1 {
+  text-decoration: none;
+}
+
+.res-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  margin: 15px 15px;
+  box-shadow: 0 4px 8px 0 rgba(129, 128, 128, 0.2),
+    0 6px 20px 0 rgba(130, 129, 129, 0.19);
+  width: 280px;
+  height: 270px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-font-smoothing: antialiased;
+  font-family: Basis_Grotesque_Pro;
+}
+
+.res-card:hover {
+  cursor: pointer;
+}
+
+.res-logo {
+  border-radius: 1rem;
+  height: 170px;
+  object-fit: cover;
+  background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%);
+}
+
+.res-details {
+  margin: 5px 10px;
+  font-family: Basis_Grotesque_Pro_Bold;
+}
+
+.line1 {
+  font-size: large;
+  text-decoration: none;
+}
+
+.line2 {
+  font-weight: normal;
+}
+
+.line3 {
+  font-weight: normal;
+}
+
+.line4 {
+  font-weight: normal;
+  color: rgba(2, 6, 12, 0.6);
+}
+
+text {
+  margin-right: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-input {
+  width: 20vw;
+  height: 4vh;
+  padding: 7px;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(129, 128, 128, 0.2),
+    0 6px 20px 0 rgba(130, 129, 129, 0.19);
+  border-style: hidden;
+  font-size: medium;
+}
+
+.search-button {
+  width: fit-content;
+  height: 4vh;
+  border-radius: 1.5rem;
+  padding: 5px 35px;
+  margin: 10px 10px;
+  border: 0.5px solid gray;
+  box-shadow: 0 4px 8px 0 rgba(129, 128, 128, 0.2),
+    0 6px 20px 0 rgba(130, 129, 129, 0.19);
+  background-color: rgb(255, 255, 255);
+  font-size: medium;
+}
+
+.shimmer-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  border-radius: 1rem;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(129, 128, 128, 0.2),
+    0 6px 20px 0 rgba(130, 129, 129, 0.19);
+  width: 20vw;
+  height: 35vh;
+}
+
+h5 {
+  margin-top: 5px;
+}
+
+.res-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.resInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.resMenu{
+  display: inherit;
+}
+
+.restuarant-logo {
+  width:25vw;
+  height: 25vh;
+  object-fit: cover;
+}
