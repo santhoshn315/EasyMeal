@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./body.css";
 import Res_Card from "./Res_Card";
-import { API_URL, API_URL2 } from "../Utils/constants";
+import { API_URL, API_URL2,CORS_PROXY } from "../Utils/constants";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,12 @@ const Body = () => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(API_URL);
+    const data = await fetch(CORS_PROXY+ API_URL, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
     const json = await data.json();
     const resturatantData =
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle

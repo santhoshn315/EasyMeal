@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { CARD_LOGO, MENU_URL } from "../Utils/constants";
+import { CARD_LOGO, CORS_PROXY, MENU_URL } from "../Utils/constants";
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 
@@ -13,7 +13,7 @@ const RestuarantMenu = () => {
   }, []);
 
   const fetchMenu = async () => {
-    const data = await fetch(MENU_URL + resId);
+    const data = await fetch(CORS_PROXY+MENU_URL + resId);
     const json = await data.json();
     const restInfo = json?.data?.cards[0]?.card?.card?.info ?? "";
     console.log(json);

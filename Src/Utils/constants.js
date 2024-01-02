@@ -10,3 +10,4 @@ export const API_URL2 =
   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING";
 export const MENU_URL =
   "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=13.0970811&lng=77.57698669999999&restaurantId=";
+export const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
